@@ -1,0 +1,19 @@
+Errores encontrados
+-----------------------------
+1. Se producira un error en la linea 40 si el valor de messageText es null. "Creo que primero se deberia validar si es null y despues validar el length de messageText.trim().length() == 0"
+2. No se especifico la BD en la cadena de conexion
+3. Ocurrirar un error al ejecutar la sentencia sql en la linea 106, ya que le faltaria la syntaxis values.
+
+Recomendaciones
+-----------------------------
+1. Aplicar patron POO y DOO
+2. Aplicar patron singleton para la conexion a base de datos
+3. Utilizar patron facade para implementacion de interface reutilizables para procesos similares como registro de logs
+4. Encapsular los metodos que generen logs
+5. Agregar un archivo de propiedades para la configuracion de base de datos ya que esta puede cambiar segun el ambiente donde se despliegue la aplicacion.
+6. Crear una clase para manejo de excepciones que herede de la clase exception
+7. Mejorar el nombre de las variables para que sean mas legibles como el caso de la variable "t" que no describe su existencia o proposito
+8. Se podria utilizar como buenas practicas la inicializacion de variables como nulas.
+9. El logger deberia tomar como referencia el nombre de la clase de la que se quiere implementar el log en este caso deberia ser Logger.getLogger("Demo") en lugar Logger.getLogger("MyLog");
+10. Se deberia aplicar principio solid como ejemplo el abrir y cerrar conexion.
+11. Se creo la variable "l" que esta concatenando el mensaje del log pero no se esta guardando y mostrarndo su valor que hace uso de la memoria innecesariamente

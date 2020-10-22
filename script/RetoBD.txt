@@ -1,0 +1,8 @@
+create database reto;
+use reto;
+
+create table Log_Values(
+mensaje text,
+nivel text,
+fec_creacion timestamp default now()
+);

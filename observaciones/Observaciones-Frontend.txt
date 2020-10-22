@@ -1,0 +1,6 @@
+1. Falta el "import React from 'react' y el ReactDOM
+2. Falta cerrar con una llave el constructor en la linea 8
+3. Falta añadir el catch de la Promesa de la linea 10 para aplicar acciones por si ocurre un error
+4. En el render de la linea 20, funcionan los corchetes y la "coma" en el return para separar los elementos, pero lo recomendable es usar los paréntesis y para ello se debe 
+   retornar un bloque como único padre, pero si hay 2 elementos que no tienen un padre, se recomienda envolverlos en un div, un React.Fragment o <></>
+5. En la linea 23, la Variable local no existe, debe ser location 
